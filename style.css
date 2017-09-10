@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Akronim|Barrio|Bungee+Shade|Creepster|Diplomata+SC|Ewert|Faster+One|Monofett|Nosifer|Sancreek|Sedgwick+Ave+Display');
+body{
+  background-color: black;
+  background-image: url(dance.gif);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  perspective: 100px;
+  padding: 100px;
+
+  animation: colorchange .75s alternate infinite;
+}
+
+body,html{min-height: 100%}
+
+img{
+  animation: jequiti 2s infinite alternate;
+}
+
+@keyframes jequiti{
+  from{
+    transform: rotateY(0deg) scale(1,1);
+  }
+  to{
+    transform: rotateY(-360deg) scale(0.5,2);
+  }
+}
+
+h1{
+  color:white;
+  animation: jequiti 5s ease-in-out infinite alternate;
+  font-weight: normal;
+}
+
+#m{font-family: 'Sedgwick Ave Display', cursive;}
+#a{font-family: 'Bungee Shade', cursive;}
+#r{font-family: 'Faster One', cursive;}
+#i{font-family: 'Barrio', cursive;}
+#o{font-family: 'Creepster', cursive;}
+#o2{font-family: 'Sancreek', cursive;}
+#o3{font-family: 'Nosifer', cursive;}
+#o4{font-family: 'Diplomata SC', cursive;}
+#o5{font-family: 'Ewert', cursive;}
+#o6{font-family: 'Akronim', cursive;}
+
+@keyframes colorchange
+    {
+      0%   {background-color: red;}
+      12.5%  {background-color: black;}
+      25%  {background-color: yellow;}
+      37.5%  {background-color: black;}
+      50%  {background-color: orange;}
+      62.5%  {background-color: black;}
+      75%  {background-color: green;}
+      87.5%  {background-color: black;}
+      100%  {background-color: blue;}
+    }
